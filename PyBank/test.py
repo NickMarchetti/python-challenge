@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Feb 22 12:45:11 2019
+
+@author: nmarchetti
+"""
+
 import os
 
 import csv
@@ -55,3 +63,10 @@ with open(csvpath, newline='') as csvfile:
         csvwriter.writerow([str(line3)])
         csvwriter.writerow([str(line4)])
         csvwriter.writerow([str(line5)])
+
+    
+    
+    
+
+    
+    
