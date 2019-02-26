@@ -2,30 +2,24 @@ import os
 
 import csv
 
-print(os.getcwd())
+#print(os.getcwd())
 
 total_months = 0
 months = []
 total_profit = 0
-rev_change_total = 0
-revenue = []
-date = []
 rev_change = []
 revenues = []
-total_for_avg = 0
-max_date = ""
-min_date = ""
 
 input_path = os.path.join('budget_data.csv')
 output_path = os.path.join('output_file.csv')
 
 with open(input_path, newline='') as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
-    #csv_header = next(csvreader)
+#   csv_header = next(csvreader)
     next(csvreader,None)
     
     for row in csvreader:
-#        print(row)
+#       print(row)
         total_months = total_months + 1
         total_profit = total_profit + int(row[1])
         revenues.append(int(row[1]))

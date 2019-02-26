@@ -6,11 +6,7 @@ import csv
 
 list_of_names = []
 unique_list = []
-votes = []
-cand_votes = []
 results = []
-
-#'%.3f' % 1.234
 
 
 input_path = os.path.join('..','PyPoll','election_data.csv')
@@ -81,8 +77,3 @@ with open(input_path, newline='') as csvfile:
             csvwriter.writerow([str(result)])
         csvwriter.writerow([str(line6)])
         csvwriter.writerow([str(line7)])
-        
-        
-        
-        
-    
