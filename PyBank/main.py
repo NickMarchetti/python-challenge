@@ -34,11 +34,11 @@ with open(input_path, newline='') as csvfile:
         min_date = months[(rev_change.index(min_change))]
     
         
-    line1 = ("Total months: " + str(total_months))
+    line1 = ("Total months:  " + str(total_months))
     line2 = ("Total Profits/Losses:  $" + str(total_profit))
     line3 = ("Average Change:  $" + str(round(average_change,2)))
-    line4 = ("Greatest Increase in Profits: " + str(max_date) + " ($" + str(max_change) + ")")
-    line5 = ("Greatest Decrease in Profits: " + str(min_date) + " ($" + str(min_change) + ")")
+    line4 = ("Greatest Increase in Profits:  " + str(max_date) + "  ($" + str(max_change) + ")")
+    line5 = ("Greatest Decrease in Profits:  " + str(min_date) + "  ($" + str(min_change) + ")")
     
     print(line1)
     print(line2)

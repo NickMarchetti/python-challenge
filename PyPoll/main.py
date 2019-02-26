@@ -41,7 +41,7 @@ with open(input_path, newline='') as csvfile:
     
     line1 = ("Election Results")
     line2 = ("-------------------------")
-    line3 = ("Total Votes: " + str(total_votes))
+    line3 = ("Total Votes:  " + str(total_votes))
     line4 = ("-------------------------")
     for x in dictionary:
         value = dictionary[x]
@@ -50,7 +50,7 @@ with open(input_path, newline='') as csvfile:
         results.append(y)
         
     line6 = ("-------------------------")
-    line7 = ("Winner: " + max(dictionary, key=dictionary.get))
+    line7 = ("Winner:  " + max(dictionary, key=dictionary.get))
     
     
     print(line1)
